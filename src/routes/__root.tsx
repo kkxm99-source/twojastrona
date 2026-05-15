@@ -53,7 +53,7 @@ function ErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
           >
             Spróbuj ponownie
           </button>
-          
+          <a
             href="/"
             className="inline-flex items-center justify-center rounded-md border border-input bg-background px-4 py-2 text-sm font-medium text-foreground transition-colors hover:bg-accent"
           >
@@ -74,7 +74,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "description", content: "Kup strone juz teraz! Profesjonalne strony internetowe w swietnej cenie." },
       { name: "author", content: "Adam Nowacki" },
       { property: "og:title", content: "Adam Nowacki - Kup strone juz teraz!" },
-      { property: "og:description", content: "Kup strone juz teraz! Profesjonalne strony internetowe w swietnej cenie." },
+      { property: "og:description", content: "Kup strone juz teraz! Profesjonalne strony internetowe." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@adamnowacki" },
